@@ -16,12 +16,15 @@ Or use ESM module directly from the browser.
 
 ## Usage
 
-### `unicodeBlocks(string)` / `unicodeBlock(char)`
+### `unicodeBlock(string)` / `unicodeBlocks(char)`
 
 ```js
-import { unicodeBlocks } from "unicode-blocks";
+// Single character
+import { unicodeBlock } from "unicode-block";
+unicodeBlock("☼") // "Miscellaneous Symbols"
 
 // All blocks used in the given string
+import { unicodeBlocks } from "unicode-block";
 unicodeBlocks("Abc")   // Set(1) { 'Basic Latin' }
 unicodeBlocks("СC")    // Set(2) { 'Cyrillic', 'Basic Latin' }
 unicodeBlocks("⧉⪥⟤") // Set(3) { 'Miscellaneous Mathematical Symbols-A',
@@ -29,18 +32,12 @@ unicodeBlocks("⧉⪥⟤") // Set(3) { 'Miscellaneous Mathematical Symbols-A',
                        //          'Supplemental Mathematical Operators' }
 unicodeBlocks("🃉🂹")   // Set(1) { 'Playing Cards' }
 unicodeBlocks("𐱐")     // Set(1) { 'No_Block' }
-
-// Single character
-import { unicodeBlock } from "unicode-blocks";
-unicodeBlock("☼") // "Miscellaneous Symbols"
 ```
-
-## Additional Utils
 
 ### List Names of All Blocks
 
 ```js
-import { listUnicodeBlocks } from "unicode-blocks";
+import { listUnicodeBlocks } from "unicode-block";
 listUnicodeBlocks()
 // Set(339) {
 //   'Basic Latin',
@@ -55,7 +52,7 @@ listUnicodeBlocks()
 ### Get Range Data of a Specific Block
 
 ```js
-import { unicodeBlockInfo } from "unicode-blocks";
+import { unicodeBlockInfo } from "unicode-block";
 unicodeBlockInfo("Symbols for Legacy Computing Supplement")
 // {
 //   block: 'Symbols for Legacy Computing Supplement',
