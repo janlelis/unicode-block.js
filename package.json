@@ -1,7 +1,7 @@
 {
   "name": "unicode-block",
   "version": "1.0.1",
-  "description": "[Unicode 16.0.0] Returns which Unicode blocks are used in a string",
+  "description": "[Unicode 17.0.0] Returns which Unicode blocks are used in a string",
   "type": "module",
   "exports": {
     "default": "./src/index.js"

@@ -2,7 +2,7 @@
 
 Each Unicode character belongs to a [block](https://en.wikipedia.org/wiki/Unicode_block). This JavaScript module returns all blocks associated with the given string.
 
-Unicode version: **16.0.0** (September 2024)
+Unicode version: **17.0.0** (September 2025)
 
 ## Install
 
@@ -39,7 +39,7 @@ unicodeBlocks("𐱐")     // Set(1) { 'No_Block' }
 ```js
 import { listUnicodeBlocks } from "unicode-block";
 listUnicodeBlocks()
-// Set(339) {
+// Set(347) {
 //   'Basic Latin',
 //   'Latin-1 Supplement',
 //   'Latin Extended-A',
@@ -64,10 +64,11 @@ unicodeBlockInfo("Symbols for Legacy Computing Supplement")
 
 ## Also See
 
-- Get the script of a character: [unicode-scripts.js](https://github.com/janlelis/unicode-scripts.js)
+- Get the script of a character: [unicode-script.js](https://github.com/janlelis/unicode-script.js)
+- Get the general category of a character: [unicode-category.js](https://github.com/janlelis/unicode-category.js)
 - Get the name of a character: [unicode-name.js](https://github.com/janlelis/unicode-name.js)
 
 ## MIT License
 
-- Copyright (C) 2024 Jan Lelis <https://janlelis.com>. Released under the MIT license.
+- Copyright (C) 2024-2025 Jan Lelis <https://janlelis.com>. Released under the MIT license.
 - Unicode data: https://www.unicode.org/copyright.html#Exhibit1
