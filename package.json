@@ -1,6 +1,6 @@
 {
   "name": "unicode-block",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "[Unicode 17.0.0] Returns which Unicode blocks are used in a string",
   "type": "module",
   "exports": {
