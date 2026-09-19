@@ -2,7 +2,7 @@
 
 Each Unicode character belongs to a [block](https://en.wikipedia.org/wiki/Unicode_block). This JavaScript module returns all blocks associated with the given string.
 
-Unicode version: **17.0.0** (September 2025)
+Unicode version: **18.0.0** (September 2026)
 
 ## Install
 
@@ -70,5 +70,5 @@ unicodeBlockInfo("Symbols for Legacy Computing Supplement")
 
 ## MIT License
 
-- Copyright (C) 2024-2025 Jan Lelis <https://janlelis.com>. Released under the MIT license.
+- Copyright (C) 2024-2026 Jan Lelis <https://janlelis.com>. Released under the MIT license.
 - Unicode data: https://www.unicode.org/copyright.html#Exhibit1
